@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="google" content="notranslate">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-language" content="ru">
+
+	<title>Test Exercise</title>
+
+	<link rel="shortcut icon" href="./assets/img/logo.png" />
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+	<link rel="stylesheet" href="./assets/css/dataTables.dataTables.css">
+	<link rel="stylesheet" href="./assets/css/rowReorder.dataTables.css">
+	<link rel="stylesheet" href="./assets/css/responsive.dataTables.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="main">
+
+			<section id="sidebar">
+				<div class="sidebar__container">
+					<div class="sidebar__top">
+						<div class="sidebar__logo">
+							<img src="./assets/img/logo.png" alt="logo">
+							<h3>Dashboard</h3>
+							<p>v.01</p>
+						</div>
+
+						<div class="sidebar__user">
+							<div class="sidebar__user-photo">
+								<img src="./assets/img/user.png" alt="user photo">
+							</div>
+
+							<div class="sidebar__user-name">
+								<h4>Evano</h4>
+								<p>Project Manager</p>
+							</div>
+						</div>
+					</div>
+
+					<nav class="sidebar__menu">
+						<ul>
+							<li class="sidebar__item">
+								<a href="">
+									<div class="sidebar__item-cont">
+										<img src="./assets/img/icons/key.png" alt="icon-key">
+										<p>Dashboard</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="sidebar__item">
+								<a href="">
+									<div class="sidebar__item-cont">
+										<img src="./assets/img/icons/square.png" alt="icon-square">
+										<p>Product</p>
+									</div>
+									<img class="arrow" src="./assets/img/arrow.png" alt="arrow">
+								</a>
+							</li>
+
+							<li class="sidebar__item active-item">
+								<a href="">
+									<div class="sidebar__item-cont">
+										<img src="./assets/img/icons/user.png" alt="icon-user">
+										<p>Customers</p>
+									</div>
+									<img class="arrow" src="./assets/img/arrow.png" alt="arrow">
+								</a>
+							</li>
+
+							<li class="sidebar__item">
+								<a href="">
+									<div class="sidebar__item-cont">
+										<img src="./assets/img/icons/money.png" alt="icon-money">
+										<p>Income</p>
+									</div>
+									<img class="arrow" src="./assets/img/arrow.png" alt="arrow">
+								</a>
+							</li>
+
+							<li class="sidebar__item">
+								<a href="">
+									<div class="sidebar__item-cont">
+										<img src="./assets/img/icons/discount.png" alt="icon-discount">
+										<p>Promote</p>
+									</div>
+									<img class="arrow" src="./assets/img/arrow.png" alt="arrow">
+								</a>
+							</li>
+
+							<li class="sidebar__item">
+								<a href="">
+									<div class="sidebar__item-cont">
+										<img src="./assets/img/icons/question.png" alt="icon-question">
+										<p>Help</p>
+									</div>
+									<img class="arrow" src="./assets/img/arrow.png" alt="arrow">
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="sidebar__user-desk">
+					<div class="sidebar__user-photo">
+						<img src="./assets/img/user.png" alt="user photo">
+					</div>
+
+					<div class="sidebar__user-name">
+						<h4>Evano</h4>
+						<p>Project Manager</p>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="table">
+				<div class="table__title">
+					<h1>Hello Evano 👋🏼,</h1>
+				</div>
+
+				<div class="table__container">
+					<h2>All Customers</h2>
+					<p class="table__green-text">Active Members</p>
+
+					<table id="infoTable" class="display nowrap" style="width:100%">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Customer Name</th>
+								<th>Company</th>
+								<th>Phone Number</th>
+								<th>Email</th>
+								<th>Country</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td>Jane Cooper</td>
+								<td>Microsoft</td>
+								<td>(225) 555-0118</td>
+								<td>jane@microsoft.com</td>
+								<td>United States</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Floyd Miles</td>
+								<td>Yahoo</td>
+								<td>(205) 555-0100</td>
+								<td>floyd@yahoo.com</td>
+								<td>Kiribati</td>
+								<td>
+									<button class="inactive btn">Inactive</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Ronald Richards</td>
+								<td>Adobe</td>
+								<td>(302) 555-0107</td>
+								<td>ronald@adobe.com</td>
+								<td>Israel</td>
+								<td>
+									<button class="inactive btn">Inactive</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Marvin McKinney</td>
+								<td>Tesla</td>
+								<td>(252) 555-0126</td>
+								<td>marvin@tesla.com</td>
+								<td>Iran</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Jerome Bell</td>
+								<td>Google</td>
+								<td>(629) 555-0129</td>
+								<td>jerome@google.com</td>
+								<td>Réunion</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Kathryn Murphy</td>
+								<td>Microsoft</td>
+								<td>(406) 555-0120</td>
+								<td>kathryn@microsoft.com</td>
+								<td>Curaçao</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Jacob Jones</td>
+								<td>Yahoo</td>
+								<td>(208) 555-0112</td>
+								<td>jacob@yahoo.com</td>
+								<td>Brazil</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Kristin Watson</td>
+								<td>Facebook</td>
+								<td>(704) 555-0127</td>
+								<td>kristin@facebook.com</td>
+								<td>Åland Islands</td>
+								<td>
+									<button class="inactive btn">Inactive</button>
+								</td>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td>Jane Cooper</td>
+								<td>Microsoft</td>
+								<td>(225) 555-0118</td>
+								<td>jane@microsoft.com</td>
+								<td>United States</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Floyd Miles</td>
+								<td>Yahoo</td>
+								<td>(205) 555-0100</td>
+								<td>floyd@yahoo.com</td>
+								<td>Kiribati</td>
+								<td>
+									<button class="inactive btn">Inactive</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Ronald Richards</td>
+								<td>Adobe</td>
+								<td>(302) 555-0107</td>
+								<td>ronald@adobe.com</td>
+								<td>Israel</td>
+								<td>
+									<button class="inactive btn">Inactive</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Marvin McKinney</td>
+								<td>Tesla</td>
+								<td>(252) 555-0126</td>
+								<td>marvin@tesla.com</td>
+								<td>Iran</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Jerome Bell</td>
+								<td>Google</td>
+								<td>(629) 555-0129</td>
+								<td>jerome@google.com</td>
+								<td>Réunion</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Kathryn Murphy</td>
+								<td>Microsoft</td>
+								<td>(406) 555-0120</td>
+								<td>kathryn@microsoft.com</td>
+								<td>Curaçao</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Jacob Jones</td>
+								<td>Yahoo</td>
+								<td>(208) 555-0112</td>
+								<td>jacob@yahoo.com</td>
+								<td>Brazil</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Kristin Watson</td>
+								<td>Facebook</td>
+								<td>(704) 555-0127</td>
+								<td>kristin@facebook.com</td>
+								<td>Åland Islands</td>
+								<td>
+									<button class="inactive btn">Inactive</button>
+								</td>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td>Jane Cooper</td>
+								<td>Microsoft</td>
+								<td>(225) 555-0118</td>
+								<td>jane@microsoft.com</td>
+								<td>United States</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Floyd Miles</td>
+								<td>Yahoo</td>
+								<td>(205) 555-0100</td>
+								<td>floyd@yahoo.com</td>
+								<td>Kiribati</td>
+								<td>
+									<button class="inactive btn">Inactive</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Ronald Richards</td>
+								<td>Adobe</td>
+								<td>(302) 555-0107</td>
+								<td>ronald@adobe.com</td>
+								<td>Israel</td>
+								<td>
+									<button class="inactive btn">Inactive</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Marvin McKinney</td>
+								<td>Tesla</td>
+								<td>(252) 555-0126</td>
+								<td>marvin@tesla.com</td>
+								<td>Iran</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Jerome Bell</td>
+								<td>Google</td>
+								<td>(629) 555-0129</td>
+								<td>jerome@google.com</td>
+								<td>Réunion</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Kathryn Murphy</td>
+								<td>Microsoft</td>
+								<td>(406) 555-0120</td>
+								<td>kathryn@microsoft.com</td>
+								<td>Curaçao</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Jacob Jones</td>
+								<td>Yahoo</td>
+								<td>(208) 555-0112</td>
+								<td>jacob@yahoo.com</td>
+								<td>Brazil</td>
+								<td>
+									<button class="active btn">Active</button>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Kristin Watson</td>
+								<td>Facebook</td>
+								<td>(704) 555-0127</td>
+								<td>kristin@facebook.com</td>
+								<td>Åland Islands</td>
+								<td>
+									<button class="inactive btn">Inactive</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<script src="./assets/js/jquery-3.7.1.js"></script>
+	<script src="./assets/js/dataTables.js"></script>
+	<script src="./assets/js/dataTables.rowReorder.js"></script>
+	<script src="./assets/js/rowReorder.dataTables.js"></script>
+	<script src="./assets/js/dataTables.responsive.js"></script>
+	<script src="./assets/js/responsive.dataTables.js"></script>
+	<script src="./assets/js/script.js"></script>
+</body>
+
+</html>
